@@ -1,0 +1,14 @@
+/* VARIABLES DEL PROYECTO */
+
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Oswald&display=swap');
+
+:root{
+    /* COLORES */
+    --color-claro: #fff;
+    --color-oscuro: #000;
+    --color-secundario: rgb(22, 6, 255);
+
+    /* FUENTES */
+    --fuente-principal: 'Oswald', sans-serif;
+    --fuente-secundaria: 'Indie Flower', cursive;
+}
