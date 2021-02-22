@@ -9,6 +9,6 @@
     --color-secundario: rgb(22, 6, 255);
 
     /* FUENTES */
-    --fuente-principal: 'Oswald', sans-serif;
-    --fuente-secundaria: 'Indie Flower', cursive;
+    --fuente-texto: 'Oswald', sans-serif;
+    --fuente-titulos: 'Indie Flower', cursive;
 }
