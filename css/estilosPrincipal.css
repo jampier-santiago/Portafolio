@@ -1,4 +1,13 @@
-.contenedor-menu{
+/* BODY */
+body{
+    background-image: url('https://i.pinimg.com/originals/72/28/ad/7228ad27bc496391e81e148095c59633.jpg');
+    background-position: center;
+    background-size: cover;
+}
+/* /BODY*/
+
+/* CONTENEDOR MENÚ */
+.menu{
     width: 100%;
     height: 100px;
     padding: 10px;
@@ -12,7 +21,7 @@
     box-sizing: border-box;
 }
 
-.contenedor-menu .logo{
+.menu__logo{
     width: 15%;
     padding: 5px 10px;
     height: auto;
@@ -20,20 +29,20 @@
     box-sizing: border-box;
 }
 
-.logo h2{
+.menu__logo h2{
     font-family: var(--fuente-secundaria);
     color: var(--color-claro);
     text-shadow: 5px 5px 10px var(--color-claro);
     letter-spacing: 3px;
 }
 
-.contenedor-menu .menu{
+.menu__enlaces{
     width: 40%;
     border: 2px solid var(--color-claro);
     box-sizing: border-box;
 }
 
-.menu ul{
+.menu__enlaces ul{
     width: 100%;
     height: 100%;
     margin: 0;
@@ -44,7 +53,7 @@
     box-sizing: border-box;
 }
 
-.menu li{
+.menu__enlaces li{
     width: 20%;
     padding: 10px;
     display: block;
@@ -52,40 +61,31 @@
     box-sizing: border-box;
 }
 
-.menu li:hover{
+.menu__enlaces li:hover{
     background-color: rgba(255, 255, 255, .2);
     font-style: italic;
     cursor: pointer;
     color: black;
 }
 
-.menu li a{
+.menu__enlaces a{
     text-decoration: none;
     font-family: var(--fuente-principal);
     color: var(--color-claro);
     box-sizing: border-box;
 }
+/* /CONTENEDOR MENÚ */
 
-/* MAIN */
-.main{
-    width: 100%;
-    height: auto;
-    padding: 20px;
-    margin-top: 100px;
-    background-image: url('https://i.pinimg.com/originals/61/d2/9e/61d29e27a572ec7ace1a73b8cfa69805.jpg');
-    background-position: center;
-    background-size: cover;
-    box-sizing: border-box;
-}
-
+/* HEADER*/
 .contenedor-principal{
     width: 100%;
     height: 600px;
+    margin-top: 100px;
     display: flex;
     box-sizing: border-box;
 }
 
-.contenedor-principal .escrito-principal{
+.contenedor-principal__escrito{
     width: 40%;
     height: 80%;
     margin: auto;
@@ -98,28 +98,38 @@
     background-color: rgba(0, 0, 0, .3);
 }
 
-.escrito-principal h3{
+.contenedor-principal__escrito h3{
     font-family: var(--fuente-secundaria);
     font-size: 40px;
 }
 
-.escrito-principal h4{
+.contenedor-principal__escrito h4{
     font-family: var(--fuente-principal);
     font-size: 25px;
 }
 
-.main .imagen-principal{
+.contenedor-principal__imagen{
     width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.imagen-principal img{
+.contenedor-principal__imagen img{
     max-width: 55%;
     border-radius: 25px;
     box-shadow: 20px 20px 40px var(--color-oscuro);
 }
+/* /HEADER */
+
+/* MAIN */
+.main{
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+/* /MAIN */
 
 /* HABILIDADES */
 .contenedor-habilidades{
@@ -129,10 +139,14 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    background-image: url('https://i.pinimg.com/originals/4d/16/b0/4d16b017a18eead73576d9a69e412f34.gif');
+    background-position: center;
+    background-size: cover;
     border: 5px solid var(--color-oscuro);
+    border-radius: 25px;
 }
 
-.contenedor-habilidades .habilidades{
+.contenedor-habilidades .titulo-contenedor-habilidades{
     width: 100%;
     height: 80px;
     padding: 10px;
@@ -140,14 +154,15 @@
     justify-content: center;
     align-items: center;
     font-size: 25px;
-    border-bottom: 2px solid var(--color-oscuro);
+    border-bottom: 2px solid var(--color-claro);
     font-weight: bolder;
     letter-spacing: 5px;
     box-sizing: border-box;
-}
+}   
 
-.habilidades h2{
+.titulo-contenedor-habilidades h2{
     font-family: var(--fuente-secundaria);
+    color: var(--color-claro);
 }
 
 .contenedor-habilidades .tarjeta-habilidades{
@@ -162,20 +177,7 @@
     box-sizing: border-box;
     background: linear-gradient(90deg, var(--color-claro), var(--color-oscuro));
 }
-
-.tarjeta-habilidades .imagen-habilidad{
-    width: 70px;
-    height: 70px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    background-color: rgb(54, 53, 53);
-}
-
-.imagen-habilidad span{
-    font-size: 40px;
-}
+/* /HABILIDADES */
 
 /* FOOTER */
 .footer{
