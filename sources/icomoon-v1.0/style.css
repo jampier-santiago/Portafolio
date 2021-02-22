@@ -39,6 +39,7 @@
 }
 .icon-github1:before {
   content: "\e904";
+  color: white;
 }
 .icon-html5:before {
   content: "\e902";
