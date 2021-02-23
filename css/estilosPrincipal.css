@@ -307,7 +307,7 @@ body{
     border-radius: 25px;
     overflow: hidden;
     animation-duration: 4s;
-    animation-name: barraColor;
+    /* animation-name: barraColor; */
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
     box-sizing: border-box;
@@ -320,7 +320,7 @@ body{
     background-color: var(--color-claro);
     transform: translate(-100%);
     animation-duration: 4s;
-    animation-name: barraDeCarga;
+    /* animation-name: barraDeCarga; */
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
 }

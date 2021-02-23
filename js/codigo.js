@@ -32,3 +32,30 @@ function retroceder(){
     }
     console.log(posicion);
 }
+
+/*
+    --- Activación de la barra de carga
+
+    Codigo encargado de activar la barra de carga en el momento que el scroll llegue a esa sección
+*/
+const $contenedorBarraDeCarga = document.getElementById('contenedor-carga');
+const $barraDeCarga = document.getElementById('carga');
+let scrollBar;
+
+window.addEventListener('scroll', validarScroll)
+
+function validarScroll(){
+    window.onscroll = function(){
+        scrollBar = document.documentElement.scrollTop;
+    }
+    console.log(scrollBar)
+
+    if(scrollBar > 800){
+        activarAnimacion();
+    }
+}
+
+function activarAnimacion(){
+    $contenedorBarraDeCarga.style.animationName = 'barraColor';
+    $barraDeCarga.style.animationName = 'barraDeCarga';
+}
