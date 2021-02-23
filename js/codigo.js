@@ -34,13 +34,17 @@ function retroceder(){
 }
 
 /*
-    --- Activación de la barra de carga
+    --- Activación de la barra de carga y mostrar los proyectos
 
-    Codigo encargado de activar la barra de carga en el momento que el scroll llegue a esa sección
+    Codigo encargado de activar la barra de carga en el momento que el scroll llegue a esa sección y mostrar los proyectos cuando la barra este completa
 */
 const $contenedorBarraDeCarga = document.getElementById('contenedor-carga');
 const $barraDeCarga = document.getElementById('carga');
+const $enlaceDeProyectos = document.getElementById('enlaceProyectos');
+const $tarjetaProyecto = document.getElementsByClassName('tarjeta-proyecto');
 let scrollBar;
+
+$enlaceDeProyectos.addEventListener('click', activarAnimacion);
 
 window.addEventListener('scroll', validarScroll)
 
@@ -58,4 +62,11 @@ function validarScroll(){
 function activarAnimacion(){
     $contenedorBarraDeCarga.style.animationName = 'barraColor';
     $barraDeCarga.style.animationName = 'barraDeCarga';
+    mostrarProyectos();
+}
+
+function mostrarProyectos(){
+    for(let i = 0; i < $tarjetaProyecto.length; i++){
+        $tarjetaProyecto[i].style.animationName = 'aparecer';
+    }
 }
