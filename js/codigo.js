@@ -1,3 +1,28 @@
+/*
+    --- Boton inicio de la pagina ---
+
+    Codigo encargado de detectar el click del usuario y llevar la ventana a su posicion inicial
+*/
+const $botonSubir = document.getElementById('botonSubir');
+$botonSubir.addEventListener('click', subir);
+
+window.addEventListener('scroll', compararScroll);
+
+function compararScroll(){
+    if(document.documentElement.scrollTop > 500){
+        $botonSubir.style.display = "flex";
+    }else{
+        $botonSubir.style.display = "none";
+    }
+}
+
+function subir(){
+    window.scrollTo({
+        top: 0, 
+        behavior: "smooth"    
+    })
+}
+
 /* 
     --- MOVIMIENTO DEL SLIDER DE HABILIDADES ---
 

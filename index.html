@@ -18,12 +18,13 @@
     </head>
 
     <body>
-        <!-- BOTON PARA LLEGAR AL INICIO DE LA PANTALLA
-        <section class="contenedor-boton-inicio">
+        <!-- BOTON PARA LLEGAR AL INICIO DE LA PANTALLA -->
+        <section class="contenedor-boton-inicio" id="botonSubir">
             <span class="icon-arrow-up2"></span>
         </section>
-        BOTON PARA LLEGAR AL INICIO DE LA PANTALLA -->
+        <!-- /BOTON PARA LLEGAR AL INICIO DE LA PANTALLA -->
 
+        <!-- MENU -->
         <nav class="menu">
             <div class="menu__logo">
                 <h2>Jampier Moreno</h2>
@@ -41,7 +42,7 @@
                         <a href="#proyectos" id="enlaceProyectos">Proyectos</a>
                     </li>
                     <li class="enlace">
-                        <a href="#">Sobre Mi</a>
+                        <a href="#sobre-mi">Sobre Mi</a>
                     </li>
                     <li class="enlace">
                         <a href="#">Contacto</a>
@@ -49,6 +50,7 @@
                 </ul>
             </div>
         </nav>
+        <!-- /MENU -->
 
         <!-- HEADER -->
         <header class="contenedor-principal">
@@ -65,7 +67,10 @@
 
         <!-- MAIN -->
         <main class="main">
-            <section class="habilidades" id="habilidades">
+            <div class="margen-habilidades" id="habilidades"></div>
+
+            <!-- HABILIDADES -->
+            <section class="habilidades">
                 <div class="flecha-movimiento izquierda icon-arrow-left2" id="izquierda"></div>
                 <div class="flecha-movimiento derecha icon-arrow-right2" id="derecha"></div>
 
@@ -144,10 +149,13 @@
                         </div>
                     </div>
                 </div>
-
             </section>
+            <!-- /HABILIDADES -->
 
-            <section class="proyectos" id="proyectos">
+            <div class="margen-sobre-mi" id="proyectos"></div>
+
+            <!-- PROYECTOS -->
+            <section class="proyectos">
                 <div class="proyectos__titulo">
                     <h2>Proyectos</h2>
                 </div>
@@ -172,7 +180,11 @@
                     </div>
                 </div>
             </section>
+            <!-- /PROYECTOS -->
 
+            <div class="margen-sobre-mi" id="sobre-mi"></div>
+
+            <!-- SOBRE MI -->
             <section class="sobre-mi">
                 <div class="sobre-mi__titulo">
                     <h2>Sobre Mi</h2>
@@ -338,7 +350,8 @@
                         </div>
                     </div>
                 </div>
-            </section> -->
+            </section>
+            <!-- /SOBRE MI -->
         </main>
         <!-- /MAIN -->
 

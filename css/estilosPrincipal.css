@@ -414,6 +414,11 @@ body{
 /* /PROYECTOS */
 
 /* SOBRE MI */
+.margen-sobre-mi, .margen-proyectos, .margen-habilidades{
+    width: 100%;
+    height: 100px;
+}
+
 .sobre-mi{
     width: 80%;
     margin: 50px auto;
@@ -422,6 +427,7 @@ body{
     overflow: hidden;
     background-image: url('https://i.pinimg.com/originals/bc/5b/3c/bc5b3c95cac2d4efb3b0ca67bbadfc42.jpg');
     background-size: contain;
+    box-shadow: 20px 30px 30px var(--color-oscuro);
     box-sizing: border-box;
 }
 
@@ -551,6 +557,7 @@ body{
     border: 2px solid var(--color-claro);
     border-radius: 25px;
     background-color: rgba(255, 255, 255, .5);
+    box-shadow: 5px 5px 25px var(--color-claro);
     box-sizing: border-box;
 }
 
@@ -566,7 +573,6 @@ body{
     justify-content: center;
     align-items: center;
     text-align: center;
-    border-right: 1px solid black;
     box-sizing: border-box;
 }
 
@@ -611,6 +617,40 @@ body{
     letter-spacing: 3px;
     font-style: italic;
 }
+
+/* BOTON PARA REGRESAR AL INICIO DE LA PANTALLA*/
+.contenedor-boton-inicio{
+    width: 70px;
+    height: 70px;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: var(--color-oscuro);
+    transition-duration: .2s;
+    box-sizing: border-box;
+    will-change: transform;
+}
+
+.contenedor-boton-inicio:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+    background-color: var(--color-claro);
+}
+
+.contenedor-boton-inicio:hover span{
+    color: var(--color-oscuro);
+}
+
+.contenedor-boton-inicio span{
+    font-size: 25px;
+    font-weight: bolder;
+    color: var(--color-claro);
+}
+/* /BOTON PARA REGRESAR AL INICIO DE LA PANTALLA*/
 
 /* ANIMACIONES */
 @keyframes barraDeCarga{
