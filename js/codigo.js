@@ -100,8 +100,7 @@ function mostrarProyectos(){
     --- VENTANAS EMERGENTES ---
 
     Codigo encargado de desplegar las ventanas emergentes de la seccion de contactos
- */
-
+*/
  const $enlaceCorreo = document.getElementById('correo');
  const $enlaceWhatsapp = document.getElementById('whatsapp');
 
@@ -109,20 +108,41 @@ function mostrarProyectos(){
  $enlaceWhatsapp.addEventListener('click', ventanaWhatsapp);
 
 
- function ventanaCorreo(){
+function ventanaCorreo(){
     swal ({
         title: "¡Contactame!",
         text: "Escribeme y me pondre en contacto lo más pronto posible (jampiersantiago@gmail.com)",
         icon: "success",
         button: "Continuar"
     });
- }
+}
 
- function ventanaWhatsapp(){
+function ventanaWhatsapp(){
     swal ({
         title: "¡Contactame!",
         text: "Escribeme y me pondre en contacto lo más pronto posible (3024596562)",
         icon: "success",
         button: "Continuar"
     });
- }
+}
+
+/* 
+MENU PARA PANTALLAS RESPONSIVE
+
+Codigo encargado del movimiento del menu en las pantallas de mobiles
+*/
+const $botonMenu = document.getElementById('botonMenu');
+const $contenedorMenu = document.getElementById('segundoMenu');
+let botonUtilizado = false;
+
+$botonMenu.addEventListener('click', mostrarMenu);
+
+function mostrarMenu(){
+    if(botonUtilizado == false){
+        $contenedorMenu.style.transform = 'translateX(0)';
+        botonUtilizado = true;
+    }else{
+        $contenedorMenu.style.transform = 'translateX(-100%)';
+        botonUtilizado = false;
+    }
+}
