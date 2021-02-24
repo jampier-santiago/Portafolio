@@ -6,6 +6,11 @@ body{
 }
 /* /BODY*/
 
+.margen-sobre-mi, .margen-proyectos, .margen-habilidades, .margen-contactos{
+    width: 100%;
+    height: 100px;
+}
+
 /* CONTENEDOR MENÚ */
 .menu{
     width: 100%;
@@ -414,10 +419,6 @@ body{
 /* /PROYECTOS */
 
 /* SOBRE MI */
-.margen-sobre-mi, .margen-proyectos, .margen-habilidades{
-    width: 100%;
-    height: 100px;
-}
 
 .sobre-mi{
     width: 80%;
@@ -595,6 +596,77 @@ body{
 }
 
 /* /SOBRE MI */
+
+/* CONTACTO */
+.contacto{
+    width: 80%;
+    margin: 10px auto;
+    margin-bottom: 30px;
+    border: 2px solid var(--color-oscuro);
+    background-image: url('https://i.pinimg.com/originals/9f/10/da/9f10dab5092bb07649782edf0392b72a.jpg');
+    background-size: cover;
+    border-radius: 25px;
+    box-shadow: 20px 30px 30px var(--color-oscuro);
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.contacto__titulo{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.contacto__titulo h2{
+    font-family: var(--fuente-titulos);
+    font-size: 40px;
+    letter-spacing: 5px;
+    font-style: italic;
+    text-shadow: 5px 5px 5px var(--color-claro);
+}
+
+.contacto__contenedor{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.enlace-contacto{
+    width: 200px;
+    height: 200px;
+    margin: 10px 40px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, .2);
+    border: 2px solid var(--color-claro);
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+
+.enlace-contacto a, .enlace-contacto span{
+    font-size: 80px;
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--color-claro);
+}
+
+.enlace-contacto:hover{
+    background-color: rgba(255, 255, 255, .8);
+}
+
+.enlace-contacto:hover a, .enlace-contacto:hover span{
+    color: var(--color-oscuro);
+}
+/* /CONTACTO*/
 
 /* FOOTER */
 .footer{

@@ -95,3 +95,34 @@ function mostrarProyectos(){
         $tarjetaProyecto[i].style.animationName = 'aparecer';
     }
 }
+
+/*
+    --- VENTANAS EMERGENTES ---
+
+    Codigo encargado de desplegar las ventanas emergentes de la seccion de contactos
+ */
+
+ const $enlaceCorreo = document.getElementById('correo');
+ const $enlaceWhatsapp = document.getElementById('whatsapp');
+
+ $enlaceCorreo.addEventListener('click', ventanaCorreo);
+ $enlaceWhatsapp.addEventListener('click', ventanaWhatsapp);
+
+
+ function ventanaCorreo(){
+    swal ({
+        title: "¡Contactame!",
+        text: "Escribeme y me pondre en contacto lo más pronto posible (jampiersantiago@gmail.com)",
+        icon: "success",
+        button: "Continuar"
+    });
+ }
+
+ function ventanaWhatsapp(){
+    swal ({
+        title: "¡Contactame!",
+        text: "Escribeme y me pondre en contacto lo más pronto posible (3024596562)",
+        icon: "success",
+        button: "Continuar"
+    });
+ }
