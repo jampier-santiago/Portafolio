@@ -1,6 +1,6 @@
 /* BODY */
 body{
-    background-image: url('https://i.pinimg.com/originals/72/28/ad/7228ad27bc496391e81e148095c59633.jpg');
+    background-color: rgb(145, 144, 144);
     background-position: center;
     background-size: cover;
 }
@@ -18,6 +18,7 @@ body{
     align-items: center;
     justify-content: space-between;
     background-color: var(--color-oscuro);
+    border-bottom: 2px solid var(--color-claro);
     box-sizing: border-box;
     z-index: 10;
 }
@@ -145,7 +146,7 @@ body{
     background-position: center;
     background-size: cover;
     border: 5px solid var(--color-claro);
-    box-shadow: 30px 20px 30px var(--color-oscuro);
+    box-shadow: 20px 30px 30px var(--color-oscuro);
     border-radius: 25px;
 }
 
@@ -264,7 +265,8 @@ body{
     height: auto;
     margin: 40px auto; 
     background-image: url('https://i.pinimg.com/originals/92/9b/7f/929b7f26dff41cb23d4fb8b5763cf32f.jpg');
-    border: 2px solid black;
+    border: 2px solid var(--color-claro);
+    box-shadow: 20px 30px 30px var(--color-oscuro);
     border-radius: 25px;
     overflow: hidden;
     box-sizing: border-box;
@@ -410,6 +412,183 @@ body{
     font-style: italic;
 }
 /* /PROYECTOS */
+
+/* SOBRE MI */
+.sobre-mi{
+    width: 80%;
+    margin: 50px auto;
+    border: 2px solid var(--color-claro);
+    border-radius: 25px;
+    overflow: hidden;
+    background-image: url('https://i.pinimg.com/originals/bc/5b/3c/bc5b3c95cac2d4efb3b0ca67bbadfc42.jpg');
+    background-size: contain;
+    box-sizing: border-box;
+}
+
+.sobre-mi__titulo{
+    width: 100%;
+    height: 150px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid var(--color-claro);
+    box-sizing: border-box;
+}
+
+.sobre-mi__titulo h2{
+    width: 100%;
+    margin: 0;
+    display: inline;
+    text-align: center;
+    letter-spacing: 5px;
+    color: var(--color-claro);
+    font-size: 40px;
+    font-family: var(--fuente-titulos);
+    font-weight: bolder;
+}
+
+.sobre-mi__contenedor{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.sobre-mi__contenedor .informacion-mia{
+    width: 70%;
+    padding: 10px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.informacion-mia .titulo-seccion{
+    width: 80%;
+    height: 80px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px dotted var(--color-claro);
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, .2);
+    box-sizing: border-box;
+}
+
+.titulo-seccion h3{
+    margin-left: 30px;
+    color: var(--color-claro);
+    font-family: var(--fuente-titulos);
+    font-size: 25px;
+    letter-spacing: 2px;
+}
+
+.informacion-mia .informacion-seccion{
+    width: 100%;
+    margin: 10px;
+    padding: 20px 30px;
+    box-sizing: border-box;
+}
+
+.informacion-seccion ul{
+    width: 50%;
+    margin: auto;
+}
+
+.informacion-seccion li{
+    height: 40px;
+    margin: 10px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: var(--fuente-texto);
+    font-size: 20px;
+    color: var(--color-claro);
+    list-style: none;
+    box-sizing: border-box;
+}
+
+.informacion-seccion li .icono-actividad{
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 1px solid var(--color-claro);
+}
+
+[class^="flaticon-"]:before{
+    margin-left: 0;
+}
+
+.informacion-mia .contenedor-tarjetas-cursos{
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.contenedor-tarjetas-cursos ul, .contenedor-tarjetas-cursos li{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.tarjeta-curso{
+    width: 100%;
+    height: 300px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    border: 2px solid var(--color-claro);
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, .5);
+    box-sizing: border-box;
+}
+
+.tarjeta-curso:first-of-type{
+    margin-top: 40px;
+}
+
+.tarjeta-curso .nombre-curso{
+    width: 40%;
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-right: 1px solid black;
+    box-sizing: border-box;
+}
+
+.nombre-curso h3{
+    font-family: var(--fuente-titulos);
+    font-size: 20px;
+}
+
+.tarjeta-curso .imagen-curso{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.imagen-curso img{
+    max-width: 85%;
+}
+
+/* /SOBRE MI */
 
 /* FOOTER */
 .footer{
