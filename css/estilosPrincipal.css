@@ -1112,3 +1112,38 @@ body{
         margin-bottom: 20px;
     }
 }
+
+@media screen and (min-width: 706px){
+    .contenedor-principal{
+        height: 450px;
+        flex-direction: row;
+    }
+
+    .contenedor-principal__escrito{
+        width: 55%;
+        height: 70%;
+        margin: auto;
+    }
+
+    .contenedor-principal__imagen{
+        width: 40%;
+    }
+
+    .contenedor-principal__imagen img{
+        max-width: 70%;
+    }
+
+    .tarjeta-proyecto{
+        width: 60%;
+        margin: auto;
+    }
+
+    .contenedor-tarjetas-cursos .tarjeta-curso{
+        flex-direction: row;
+    }
+
+    .sobre-mi .informacion-seccion{
+        width: 70%;
+        margin: auto;
+    }
+}
