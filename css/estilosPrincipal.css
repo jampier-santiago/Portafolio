@@ -821,7 +821,7 @@ body{
 }
 
 /* MEDIA QUERIES */
-@media only screen and (min-width: 319px) and (max-width: 373px){
+@media only screen and (min-width: 319px){
     .menu__enlaces{
         width: 20%;
     }
@@ -1004,4 +1004,74 @@ body{
         width: 250px;
         height: 150px;
     }
-}    
+}
+
+@media only screen and (min-width: 319px) and (orientation: landscape){
+    .contenedor-principal{
+        height: 300px;
+        padding: 20px;
+        flex-direction: row;
+    }
+
+    .contenedor-principal__escrito{
+        width: 60%;
+        height: 80%;
+        box-sizing: border-box;
+    }
+
+    .contenedor-principal__escrito h4{
+        margin: 0;
+        margin-bottom: 10px;
+    }
+
+    .contenedor-principal__imagen{
+        width: 40%;
+        margin: 40px auto;
+    }
+
+    .main{
+        padding: 0;
+    }
+
+    .tarjeta-proyecto{
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .informacion-seccion li{
+        margin-left: 200px;
+    }
+
+    .informacion-mia .tarjeta-curso{
+        flex-direction: row;
+        margin-bottom: 20px;
+    }
+
+    .tarjeta-curso .nombre-curso{
+        width: 40%;
+    }
+
+    .tarjeta-curso .imagen-curso{
+        width: 60%;
+    }
+
+    .enlace-contacto{
+        width: 170px;
+        height: 170px;
+    }
+    
+    .segundo-menu{
+        bottom: 20px;
+    }
+
+    .segundo-menu ul{
+        padding: 0;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .segundo-menu li{
+        width: 30%;
+        text-align: center;
+    }
+}
