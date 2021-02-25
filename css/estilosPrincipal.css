@@ -1075,3 +1075,19 @@ body{
         text-align: center;
     }
 }
+
+@media screen and (min-width: 374px){
+    .enlace-contacto{
+        width: 150px;
+    }
+
+    .main{
+        padding: 0;
+    }
+
+    .habilidades{
+        width: 90%;
+        padding: 10px 20px;
+        box-sizing: border-box;
+    }
+}
