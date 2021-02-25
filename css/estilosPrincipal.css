@@ -1091,3 +1091,9 @@ body{
         box-sizing: border-box;
     }
 }
+
+@media screen and (min-width: 374px) and (orientation: landscape){
+    .enlace-contacto{
+        width: 170px;
+    }
+}
