@@ -167,6 +167,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    box-sizing: border-box;
 }
 
 .contenedor-principal__imagen img{
@@ -575,6 +576,7 @@ body{
     align-items: center;
     border-radius: 50%;
     border: 1px solid var(--color-claro);
+    box-sizing: border-box;
 }
 
 [class^="flaticon-"]:before{
@@ -752,6 +754,7 @@ body{
     transition-duration: .2s;
     box-sizing: border-box;
     will-change: transform;
+    z-index: 10;
 }
 
 .contenedor-boton-inicio:hover{
@@ -816,3 +819,189 @@ body{
         opacity: 1;
     }
 }
+
+/* MEDIA QUERIES */
+@media only screen and (min-width: 319px) and (max-width: 373px){
+    .menu__enlaces{
+        width: 20%;
+    }
+
+    .menu__enlaces li{
+        display: none;
+    }
+
+    .menu__enlaces li:last-of-type{
+        width: 100%;
+        display: block;
+    }
+
+    .contenedor-principal{
+        height: 500px;
+        flex-direction: column;
+    }
+
+    .contenedor-principal__escrito{
+        width: 85%;
+        height: 50%;
+    }
+
+    .contenedor-principal__escrito h3, .contenedor-principal__escrito h4{
+        text-align: center;
+    }
+
+    .contenedor-principal__imagen{
+        width: 80%;
+        margin: auto;
+    }
+
+    .habilidades{
+        width: 95%;
+    }
+
+    .habilidades__titulo{
+        height: 15%;
+    }
+
+    .habilidades__titulo h2{
+        font-size: 30px;
+    }
+
+    .habilidades__contenedor{
+        height: 85%;
+    }
+
+    .habilidades__contenedor .tarjeta-habilidad{
+        padding: 10px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tarjeta-habilidad__imagen{
+        width: 80%;
+    }
+
+    .tarjeta-habilidad__imagen span{
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+        font-size: 8em;
+        box-sizing: border-box;
+    }
+
+    .tarjeta-habilidad__info{
+        width: 100%;
+    }
+
+    .tarjeta-habilidad__info h2{
+        margin: 10px 20px;
+        font-size: 30px;
+    }
+
+    .tarjeta-habilidad__info p{
+        margin: 0;
+        font-size: 15px;
+    }
+
+    .proyectos{
+        width: 95%;
+    }
+
+    .proyectos__titulo{
+        height: 8%;
+    }
+
+    .proyectos__titulo h2{
+        font-size: 30px;
+    }
+
+    .proyectos__contenedor{
+        padding: 15px;
+    }
+
+    .tarjeta-proyecto{
+        width: 100%;
+        height: 150px;
+        margin: 0;
+        background-position: center;
+    }
+
+    .info-proyecto .titulo-proyecto h2{
+        font-size: 25px;
+    }
+    
+    .info-proyecto .descripcion-proyecto p{
+        margin-top: 0;
+        margin-bottom: 5px;
+        font-size: 15px;
+    }
+
+    .info-proyecto .descripcion-proyecto a{
+        margin-top: 0;
+        padding: 5px 10px;
+        font-size: 15px;
+    }
+
+    .sobre-mi{
+        width: 95%;
+        margin: 30px auto;
+    }
+
+    .sobre-mi__titulo{
+        height: 80px;
+    }
+
+    .sobre-mi__titulo h2{
+        font-size: 30px;
+    }
+
+    .sobre-mi__contenedor .informacion-mia{
+        width: 100%;
+    }
+
+    .titulo-seccion h3{
+        margin: 0;
+    }
+
+    .sobre-mi .informacion-seccion{
+        padding: 0;
+    }
+
+    .informacion-seccion ul{
+        width: 100%;
+        padding: 0;
+    }
+
+    .informacion-seccion .titulo-actividad span{
+        font-size: 18px;
+    }
+
+    .tarjeta-curso:first-of-type{
+        margin-top: 20px;
+        flex-direction: column;
+    }
+
+    .tarjeta-curso .nombre-curso, .tarjeta-curso .imagen-curso{
+        width: 100%;
+    }
+
+    .contacto{
+        width: 95%;
+    }
+
+    .contacto__titulo{
+        height: 80px;
+    }
+
+    .contacto__titulo h2{
+        font-size: 30px;
+    }
+
+    .contacto__contenedor{
+        padding: 10px;
+    }
+
+    .enlace-contacto{
+        width: 250px;
+        height: 150px;
+    }
+}    
