@@ -1097,3 +1097,18 @@ body{
         width: 170px;
     }
 }
+
+@media screen and (min-width: 424px) and (max-width: 705px){
+    .contenedor-principal{
+        height: 580px;
+    }
+
+    .tarjeta-proyecto{
+        width: 80%;
+        margin: auto;
+    }
+
+    .contenedor-tarjetas-cursos li{
+        margin-bottom: 20px;
+    }
+}
