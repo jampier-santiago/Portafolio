@@ -1147,3 +1147,13 @@ body{
         margin: auto;
     }
 }
+
+@media screen and (min-width: 767px){
+    .informacion-seccion li{
+        margin-left: 50px;
+    }
+
+    .tarjeta-proyecto{
+        width: 45%;
+    }
+}
