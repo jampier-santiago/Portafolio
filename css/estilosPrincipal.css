@@ -1157,3 +1157,13 @@ body{
         width: 45%;
     }
 }
+
+@media screen and (min-width: 1023px){
+    .tarjeta-proyecto{
+        height: 200px;
+    }
+
+    .imagen-curso img{
+        max-width: 70%;
+    }
+}
