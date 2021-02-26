@@ -66,10 +66,12 @@ function retroceder(){
 const $contenedorBarraDeCarga = document.getElementById('contenedor-carga');
 const $barraDeCarga = document.getElementById('carga');
 const $enlaceDeProyectos = document.getElementById('enlaceProyectos');
+const $enlaceSegundoMenuProyctos = document.getElementById('segundoEnlaceProyectos');
 const $tarjetaProyecto = document.getElementsByClassName('tarjeta-proyecto');
 let scrollBar;
 
 $enlaceDeProyectos.addEventListener('click', activarAnimacion);
+$enlaceSegundoMenuProyctos.addEventListener('click', activarAnimacion);
 
 window.addEventListener('scroll', validarScroll)
 
