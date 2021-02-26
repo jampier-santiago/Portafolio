@@ -1076,7 +1076,7 @@ body{
     }
 }
 
-@media screen and (min-width: 374px){
+@media only screen and (min-width: 374px){
     .enlace-contacto{
         width: 150px;
     }
@@ -1092,13 +1092,13 @@ body{
     }
 }
 
-@media screen and (min-width: 374px) and (orientation: landscape){
+@media only screen and (min-width: 374px) and (orientation: landscape){
     .enlace-contacto{
         width: 170px;
     }
 }
 
-@media screen and (min-width: 424px) and (max-width: 705px){
+@media only screen and (min-width: 424px) and (max-width: 705px){
     .contenedor-principal{
         height: 580px;
     }
@@ -1113,7 +1113,7 @@ body{
     }
 }
 
-@media screen and (min-width: 706px){
+@media only screen and (min-width: 706px){
     .contenedor-principal{
         height: 450px;
         flex-direction: row;
@@ -1148,7 +1148,7 @@ body{
     }
 }
 
-@media screen and (min-width: 767px){
+@media only screen and (min-width: 767px){
     .informacion-seccion li{
         margin-left: 50px;
     }
@@ -1158,12 +1158,76 @@ body{
     }
 }
 
-@media screen and (min-width: 1023px){
+@media only screen and (min-width: 1023px){
     .tarjeta-proyecto{
         height: 200px;
     }
 
     .imagen-curso img{
         max-width: 70%;
+    }
+
+    .menu__enlaces{
+        width: 40%;
+    }
+
+    .menu__enlaces li{
+        display: block;
+    }
+
+    .menu__enlaces li:last-of-type{
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 1439px){
+    .contenedor-principal{
+        height: 600px;
+    }
+
+    .habilidades{
+        width: 75%;
+        height: 600px;
+    }
+
+    .proyectos, .sobre-mi{
+        width: 80%;
+    }
+
+    .tarjeta-proyecto{
+        width: 40%;
+        height: 250px;
+    }
+
+    .tarjeta-curso{
+        width: 80%;
+    }
+
+    .imagen-curso img{
+        max-width: 60%;
+    }
+
+    .titulo-proyecto{
+        margin-top: 10px;
+    }
+
+    .info-proyecto .titulo-proyecto h2{
+        margin: 10px;
+        font-size: 35px;
+    }
+
+    .descripcion-proyecto{
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .info-proyecto .descripcion-proyecto p{
+        font-size: 25px;
+    }
+
+    .info-proyecto .descripcion-proyecto a{
+        margin-top: 20px;
+        padding: 10px 20px;
+        font-size: 20px;
     }
 }
