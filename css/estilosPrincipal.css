@@ -674,7 +674,8 @@ body{
     font-size: 40px;
     letter-spacing: 5px;
     font-style: italic;
-    text-shadow: 5px 5px 5px var(--color-claro);
+    color: var(--color-claro);
+    text-shadow: 8px 8px 4px var(--color-oscuro);
 }
 
 .contacto__contenedor{
