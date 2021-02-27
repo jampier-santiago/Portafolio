@@ -82,7 +82,7 @@ function validarScroll(){
     }
     console.log(scrollBar)
 
-    if(scrollBar > 950){
+    if(scrollBar > 1000){
         activarAnimacion();
     }
 }
