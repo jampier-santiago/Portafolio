@@ -90,7 +90,7 @@ function validarScroll(){
 function activarAnimacion(){
     if(window.screen.width <= 769){
         if(mensajeMostrado == false){
-            alert('hola');
+            alert('Para ver los proyectos toque la imagen deseada');
             $contenedorBarraDeCarga.style.animationName = 'barraColor';
             $barraDeCarga.style.animationName = 'barraDeCarga';
             mostrarProyectos();
