@@ -1232,3 +1232,46 @@ body{
         font-size: 20px;
     }
 }
+
+@media screen and (min-width: 2559px){
+    .contenedor-principal__imagen img{
+        max-width: 40%;
+    }
+
+    .habilidades{
+        width: 60%;
+        height: 700px;
+    }
+
+    .flecha-movimiento{
+        width: 100px;
+        height: 100px;
+        line-height: 100px;
+    }
+
+    .contenedor-boton-inicio{
+        width: 100px;
+        height: 100px;
+    }
+
+    .proyectos{
+        width: 65%;
+    }
+
+    .proyectos__carga .contenedor-carga{
+        width: 70%;
+        margin-top: 50px;
+    }
+
+    .tarjeta-proyecto{
+        height: 350px;
+    }
+
+    .informacion-seccion ul{
+        width: 50%;
+    }
+
+    .imagen-curso img{
+        max-width: 40%;
+    }
+}
