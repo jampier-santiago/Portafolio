@@ -1,5 +1,5 @@
 /*
-    --- Boton inicio de la pagina ---
+    --- BOTON INICIO DE LA PAGINA ---
 
     Codigo encargado de detectar el click del usuario y llevar la ventana a su posicion inicial
 */
@@ -59,20 +59,20 @@ function retroceder(){
 }
 
 /*
-    --- Activación de la barra de carga y mostrar los proyectos
+    --- ACTIVACIÓN DE LA BARRA DE CARGA Y VISTA DE LOS PROYECTOS --
 
     Codigo encargado de activar la barra de carga en el momento que el scroll llegue a esa sección y mostrar los proyectos cuando la barra este completa
 */
 const $contenedorBarraDeCarga = document.getElementById('contenedor-carga');
 const $barraDeCarga = document.getElementById('carga');
-const $enlaceDeProyectos = document.getElementById('enlaceProyectos');
-const $enlaceSegundoMenuProyctos = document.getElementById('segundoEnlaceProyectos');
+const $enlaceProyectos = document.getElementById('enlaceProyectos');
+const $segundoEnlaceProyectos = document.getElementById('segundoEnlaceProyectos');
 const $tarjetaProyecto = document.getElementsByClassName('tarjeta-proyecto');
 let scrollBar;
 let mensajeMostrado = false;
 
-$enlaceDeProyectos.addEventListener('click', activarAnimacion);
-$enlaceSegundoMenuProyctos.addEventListener('click', activarAnimacion);
+$enlaceProyectos.addEventListener('click', activarAnimacion);
+$segundoEnlaceProyectos.addEventListener('click', activarAnimacion);
 
 window.addEventListener('scroll', validarScroll)
 
@@ -82,7 +82,7 @@ function validarScroll(){
     }
     console.log(scrollBar)
 
-    if(scrollBar > 1000){
+    if(scrollBar > 1150){
         activarAnimacion();
     }
 }
@@ -145,15 +145,31 @@ function ventanaWhatsapp(){
 }
 
 /* 
-MENU PARA PANTALLAS RESPONSIVE
+    --- MENU PARA PANTALLAS RESPONSIVE ---
 
-Codigo encargado del movimiento del menu en las pantallas de mobiles
+    Codigo encargado del movimiento del menu en las pantallas de mobiles, ademas de el movimiento de la ventana con respecto a la elección de enlaces.
 */
 const $botonMenu = document.getElementById('botonMenu');
 const $contenedorMenu = document.getElementById('segundoMenu');
+const $enlaceHabilidades = document.getElementById('enlaceHabilidades');
+const $segundoEnlaceHabilidades = document.getElementById('segundoEnlaceHabilidades');
+const $enlaceDeProyectos = $enlaceProyectos;
+const $enlaceDeSegundoProyectos = $segundoEnlaceProyectos;
+const $enlaceSobreMi = document.getElementById('enlaceSobreMi');
+const $segundoEnlaceSobreMi = document.getElementById('SegundoEnlaceSobreMi');
+const $enlaceContacto = document.getElementById('enlaceContacto');
+const $segundoEnlaceContacto = document.getElementById('segundoEnlaceContacto');
 let botonUtilizado = false;
 
 $botonMenu.addEventListener('click', mostrarMenu);
+$enlaceHabilidades.addEventListener('click', () => moverA_SeccionDeMenu(1));
+$segundoEnlaceHabilidades.addEventListener('click', () => moverA_SeccionDeMenu(1));
+$enlaceDeProyectos.addEventListener('click', () => moverA_SeccionDeMenu(2));
+$segundoEnlaceProyectos.addEventListener('click', () => moverA_SeccionDeMenu(2));
+$enlaceSobreMi.addEventListener('click', () => moverA_SeccionDeMenu(3));
+$segundoEnlaceSobreMi.addEventListener('click', () => moverA_SeccionDeMenu(3));
+$enlaceContacto.addEventListener('click', () => moverA_SeccionDeMenu(4));
+$segundoEnlaceContacto.addEventListener('click', () => moverA_SeccionDeMenu(4))
 
 function mostrarMenu(){
     if(botonUtilizado == false){
@@ -162,5 +178,37 @@ function mostrarMenu(){
     }else{
         $contenedorMenu.style.transform = 'translateX(-100%)';
         botonUtilizado = false;
+    }
+}
+
+function moverA_SeccionDeMenu(eleccion){
+    switch(eleccion){
+        case 1:
+            window.scrollTo({
+                top: 600,
+                behavior: 'smooth'
+            });
+        break;
+        
+        case 2:
+            window.scrollTo({
+                top: 1200,
+                behavior: 'smooth'
+            });
+        break;
+
+        case 3:
+            window.scrollTo({
+                top: 1750,
+                behavior: 'smooth'
+            });
+        break;
+
+        case 4:
+            window.scrollTo({
+                top: 5000,
+                behavior: 'smooth'
+            })
+        break;
     }
 }
