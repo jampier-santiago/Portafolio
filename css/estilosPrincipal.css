@@ -1,3 +1,7 @@
+/* IMPORTAR LAS VARIABLES Y FORMATEAR LOS ESTILOS POR DEFECTO */
+@import "normalize.css";
+@import "variables.css";
+
 /* BODY */
 body{
     background-color: rgb(145, 144, 144);
