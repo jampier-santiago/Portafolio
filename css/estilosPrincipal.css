@@ -88,6 +88,9 @@ body{
 
 .menu__enlaces .menu-responsive{
     display: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 /* /CONTENEDOR MENÚ */
 
@@ -120,7 +123,7 @@ body{
     margin: 20px 10px;
 }
 
-.segundo-menu a{
+.segundo-menu a, .segundo-menu span{
     font-family: var(--fuente-texto);
     font-size: 25px;
     letter-spacing: 5px;

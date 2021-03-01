@@ -151,12 +151,13 @@ function ventanaWhatsapp(){
 */
 const $botonMenu = document.getElementById('botonMenu');
 const $contenedorMenu = document.getElementById('segundoMenu');
+const $contenedorMenuEnlaces = document.getElementById('contenedorEnlaces');
 const $enlaceHabilidades = document.getElementById('enlaceHabilidades');
 const $segundoEnlaceHabilidades = document.getElementById('segundoEnlaceHabilidades');
 const $enlaceDeProyectos = $enlaceProyectos;
 const $enlaceDeSegundoProyectos = $segundoEnlaceProyectos;
 const $enlaceSobreMi = document.getElementById('enlaceSobreMi');
-const $segundoEnlaceSobreMi = document.getElementById('SegundoEnlaceSobreMi');
+const $segundoEnlaceSobreMi = document.getElementById('segundoEnlaceSobreMi');
 const $enlaceContacto = document.getElementById('enlaceContacto');
 const $segundoEnlaceContacto = document.getElementById('segundoEnlaceContacto');
 let botonUtilizado = false;
@@ -171,6 +172,72 @@ $segundoEnlaceSobreMi.addEventListener('click', () => moverA_SeccionDeMenu(3));
 $enlaceContacto.addEventListener('click', () => moverA_SeccionDeMenu(4));
 $segundoEnlaceContacto.addEventListener('click', () => moverA_SeccionDeMenu(4))
 
+function moverA_SeccionDeMenu(eleccion){
+    if(window.screen.width < 1023){
+        switch(eleccion){
+            case 1:
+                window.scrollTo({
+                    top: 522,
+                    behavior: 'smooth'
+                });
+            break;
+            
+            case 2:
+                window.scrollTo({
+                    top: 1050,
+                    behavior: 'smooth'
+                });
+            break;
+    
+            case 3:
+                window.scrollTo({
+                    top: 1500,
+                    behavior: 'smooth'
+                });
+            break;
+    
+            case 4:
+                window.scrollTo({
+                    top: 4650,
+                    behavior: 'smooth'
+                })
+            break;
+        }
+    }else{
+        switch(eleccion){
+            case 1:
+                window.scrollTo({
+                    top: 600,
+                    behavior: 'smooth'
+                });
+                console.log('dadaad');
+            break;
+            
+            case 2:
+                window.scrollTo({
+                    top: 1200,
+                    behavior: 'smooth'
+                });
+            break;
+    
+            case 3:
+                window.scrollTo({
+                    top: 1750,
+                    behavior: 'smooth'
+                });
+            break;
+    
+            case 4:
+                window.scrollTo({
+                    top: 5000,
+                    behavior: 'smooth'
+                })
+            break;
+        }
+    }
+    $contenedorMenu.style.transform = 'translateX(-100%)';
+}
+
 function mostrarMenu(){
     if(botonUtilizado == false){
         $contenedorMenu.style.transform = 'translateX(0)';
@@ -178,37 +245,5 @@ function mostrarMenu(){
     }else{
         $contenedorMenu.style.transform = 'translateX(-100%)';
         botonUtilizado = false;
-    }
-}
-
-function moverA_SeccionDeMenu(eleccion){
-    switch(eleccion){
-        case 1:
-            window.scrollTo({
-                top: 600,
-                behavior: 'smooth'
-            });
-        break;
-        
-        case 2:
-            window.scrollTo({
-                top: 1200,
-                behavior: 'smooth'
-            });
-        break;
-
-        case 3:
-            window.scrollTo({
-                top: 1750,
-                behavior: 'smooth'
-            });
-        break;
-
-        case 4:
-            window.scrollTo({
-                top: 5000,
-                behavior: 'smooth'
-            })
-        break;
     }
 }
