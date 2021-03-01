@@ -202,7 +202,7 @@ body{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    background-image: url('https://i.pinimg.com/originals/4d/16/b0/4d16b017a18eead73576d9a69e412f34.gif');
+    background-image: url('https://i.pinimg.com/originals/9f/10/da/9f10dab5092bb07649782edf0392b72a.jpg');
     background-position: center;
     background-size: cover;
     border: 5px solid var(--color-claro);
@@ -1185,6 +1185,10 @@ body{
 
     .menu__enlaces li:last-of-type{
         display: none;
+    }
+
+    .tarjeta-habilidad__info p{
+        font-size: 20px;
     }
 }
 
