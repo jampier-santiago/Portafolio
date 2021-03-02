@@ -163,6 +163,7 @@ const $enlaceSobreMi = document.getElementById('enlaceSobreMi');
 const $segundoEnlaceSobreMi = document.getElementById('segundoEnlaceSobreMi');
 const $enlaceContacto = document.getElementById('enlaceContacto');
 const $segundoEnlaceContacto = document.getElementById('segundoEnlaceContacto');
+let tamaniosPantalla = [320, 375, 425, 768, 1024, 1100, 1440, 2560]
 let botonUtilizado = false;
 
 $botonMenu.addEventListener('click', mostrarMenu);
@@ -176,13 +177,15 @@ $enlaceContacto.addEventListener('click', () => moverA_SeccionDeMenu(4));
 $segundoEnlaceContacto.addEventListener('click', () => moverA_SeccionDeMenu(4))
 
 function moverA_SeccionDeMenu(eleccion){
-    if(window.screen.width < 1023){
+    alert(window.screen.width);
+    if((window.screen.width >= tamaniosPantalla[0]) && (window.screen.width <= (tamaniosPantalla[1] - 1))){
         switch(eleccion){
             case 1:
                 window.scrollTo({
-                    top: 522,
+                    top: 520,
                     behavior: 'smooth'
                 });
+                alert('segundo if')
             break;
             
             case 2:
@@ -194,45 +197,231 @@ function moverA_SeccionDeMenu(eleccion){
     
             case 3:
                 window.scrollTo({
-                    top: 1500,
+                    top: 1480,
                     behavior: 'smooth'
                 });
             break;
     
             case 4:
                 window.scrollTo({
-                    top: 4650,
+                    top: 3950,
                     behavior: 'smooth'
                 })
             break;
         }
-    }else{
+    }else if((window.screen.width >= tamaniosPantalla[1]) && (window.screen.width <= (tamaniosPantalla[2] - 1))){
         switch(eleccion){
             case 1:
                 window.scrollTo({
-                    top: 600,
+                    top: 522,
                     behavior: 'smooth'
                 });
-                console.log('dadaad');
+                alert('segundo if')
             break;
             
             case 2:
                 window.scrollTo({
-                    top: 1200,
+                    top: 1050,
                     behavior: 'smooth'
                 });
             break;
     
             case 3:
                 window.scrollTo({
-                    top: 1750,
+                    top: 1480,
                     behavior: 'smooth'
                 });
             break;
     
             case 4:
                 window.scrollTo({
-                    top: 5000,
+                    top: 3950,
+                    behavior: 'smooth'
+                })
+            break;
+        }
+    }else if((window.screen.width >= tamaniosPantalla[2]) && (window.screen.width <= (tamaniosPantalla[3] - 1))){
+        alert('tercer if')
+        switch(eleccion){
+            case 1:
+                window.scrollTo({
+                    top: 580,
+                    behavior: 'smooth'
+                });
+            break;
+            
+            case 2:
+                window.scrollTo({
+                    top: 1120,
+                    behavior: 'smooth'
+                });
+            break;
+    
+            case 3:
+                window.scrollTo({
+                    top: 1560,
+                    behavior: 'smooth'
+                });
+            break;
+    
+            case 4:
+                window.scrollTo({
+                    top: 4181,
+                    behavior: 'smooth'
+                })
+            break;
+        }
+    }else if((window.screen.width >= tamaniosPantalla[3]) && (window.screen.width <= (tamaniosPantalla[4] - 1))){
+        alert('cuarto if')
+        switch(eleccion){
+            case 1:
+                window.scrollTo({
+                    top: 468,
+                    behavior: 'smooth'
+                });
+            break;
+            
+            case 2:
+                window.scrollTo({
+                    top: 1000,
+                    behavior: 'smooth'
+                });
+            break;
+    
+            case 3:
+                window.scrollTo({
+                    top: 1424,
+                    behavior: 'smooth'
+                });
+            break;
+    
+            case 4:
+                window.scrollTo({
+                    top: 4181,
+                    behavior: 'smooth'
+                })
+            break;
+        }
+    }else if((window.screen.width >= tamaniosPantalla[4]) && (window.screen.width <= (tamaniosPantalla[5] - 1))){
+        alert('quinto if')
+        switch(eleccion){
+            case 1:
+                window.scrollTo({
+                    top: 468,
+                    behavior: 'smooth'
+                });
+            break;
+            
+            case 2:
+                window.scrollTo({
+                    top: 1000,
+                    behavior: 'smooth'
+                });
+            break;
+    
+            case 3:
+                window.scrollTo({
+                    top: 1480,
+                    behavior: 'smooth'
+                });
+            break;
+    
+            case 4:
+                window.scrollTo({
+                    top: 4181,
+                    behavior: 'smooth'
+                })
+            break;
+        }
+    }else if((window.screen.width >= tamaniosPantalla[5]) && (window.screen.width <= (tamaniosPantalla[6] - 1))){
+        alert('sexto if')
+        switch(eleccion){
+            case 1:
+                window.scrollTo({
+                    top: 468,
+                    behavior: 'smooth'
+                });
+            break;
+            
+            case 2:
+                window.scrollTo({
+                    top: 1000,
+                    behavior: 'smooth'
+                });
+            break;
+    
+            case 3:
+                window.scrollTo({
+                    top: 1480,
+                    behavior: 'smooth'
+                });
+            break;
+    
+            case 4:
+                window.scrollTo({
+                    top: 4181,
+                    behavior: 'smooth'
+                })
+            break;
+        }
+    }else if((window.screen.width >= tamaniosPantalla[6]) && (window.screen.width <= tamaniosPantalla[7] - 1)){
+        alert('7 if')
+        switch(eleccion){
+            case 1:
+                window.scrollTo({
+                    top: 606,
+                    behavior: 'smooth'
+                });
+            break;
+            
+            case 2:
+                window.scrollTo({
+                    top: 1245,
+                    behavior: 'smooth'
+                });
+            break;
+    
+            case 3:
+                window.scrollTo({
+                    top: 1779,
+                    behavior: 'smooth'
+                });
+            break;
+    
+            case 4:
+                window.scrollTo({
+                    top: 3320,
+                    behavior: 'smooth'
+                })
+            break;
+        }
+    }else{
+        alert('8 if')
+        switch(eleccion){
+            case 1:
+                window.scrollTo({
+                    top: 606,
+                    behavior: 'smooth'
+                });
+            break;
+            
+            case 2:
+                window.scrollTo({
+                    top: 1332,
+                    behavior: 'smooth'
+                });
+            break;
+    
+            case 3:
+                window.scrollTo({
+                    top: 2029,
+                    behavior: 'smooth'
+                });
+            break;
+    
+            case 4:
+                window.scrollTo({
+                    top: 3565,
                     behavior: 'smooth'
                 })
             break;
