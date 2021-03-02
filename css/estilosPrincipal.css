@@ -938,8 +938,16 @@ body{
         flex-direction: column;
     }
 
-    .tarjeta-curso .nombre-curso, .tarjeta-curso .imagen-curso{
-        width: 100%;
+    .informacion-mia .contenedor-tarjetas-cursos {
+        padding: 5px;
+    }
+
+    .contenedor-tarjetas-cursos li{
+        width: 90%;
+    }
+
+    .tarjeta-curso{
+        height: 150px;
     }
 }
 
@@ -975,19 +983,6 @@ body{
         margin-left: 200px;
     }
 
-    .informacion-mia .tarjeta-curso{
-        flex-direction: row;
-        margin-bottom: 20px;
-    }
-
-    .tarjeta-curso .nombre-curso{
-        width: 40%;
-    }
-
-    .tarjeta-curso .imagen-curso{
-        width: 60%;
-    }
-    
     .segundo-menu{
         bottom: 20px;
     }
@@ -1002,6 +997,14 @@ body{
         width: 30%;
         text-align: center;
     }
+
+    .tarjeta-curso{
+        height: 250px;
+    }
+
+    .tarjeta-curso img{
+        max-width: 55%;
+    }
 }
 
 @media only screen and (min-width: 374px){
@@ -1009,6 +1012,23 @@ body{
         width: 90%;
         padding: 10px 20px;
         box-sizing: border-box;
+    }
+
+    .tarjeta-curso{
+        height: 200px;
+    }
+
+    .tarjeta-curso img{
+        max-width: 90%;
+    }
+}
+
+@media only screen and (min-width: 374px) and (orientation: landscape){
+    .tarjeta-curso{
+        height: 250px;
+    }
+    .tarjeta-curso img{
+        max-width: 55%;
     }
 }
 
@@ -1024,6 +1044,16 @@ body{
 
     .contenedor-tarjetas-cursos li{
         margin-bottom: 20px;
+    }
+
+    .tarjeta-curso img{
+        max-width: 80%;
+    }
+}
+
+@media only screen and (min-width: 424px) and (orientation: landscape){
+    .tarjeta-curso img{
+        max-width: 55%;
     }
 }
 
@@ -1070,6 +1100,10 @@ body{
     .tarjeta-proyecto{
         width: 45%;
     }
+
+    .tarjeta-curso img{
+        max-width: 50%;
+    }
 }
 
 @media only screen and (min-width: 1023px){
@@ -1095,6 +1129,18 @@ body{
 
     .tarjeta-habilidad__info p{
         font-size: 20px;
+    }
+
+    .contenedor-tarjetas-cursos li{
+        width: 45%;
+    }
+
+    .tarjeta-curso{
+        height: 200px;
+    }
+
+    .tarjeta-curso img{
+        max-width: 60%;
     }
 }
 
