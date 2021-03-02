@@ -82,8 +82,14 @@ function validarScroll(){
     }
     console.log(scrollBar)
 
-    if(scrollBar > 1150){
-        activarAnimacion();
+    if(window.screen.width <= 769){
+        if(scrollBar > 1055){
+            activarAnimacion();
+        }
+    }else{
+        if(scrollBar > 1150){
+            activarAnimacion();
+        }
     }
 }
 
