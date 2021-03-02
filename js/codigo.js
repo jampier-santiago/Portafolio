@@ -331,7 +331,7 @@ function moverA_SeccionDeMenu(eleccion){
         switch(eleccion){
             case 1:
                 window.scrollTo({
-                    top: 468,
+                    top: 469,
                     behavior: 'smooth'
                 });
             break;
