@@ -120,11 +120,8 @@ function mostrarProyectos(){
     Codigo encargado de desplegar las ventanas emergentes de la seccion de contactos
 */
  const $enlaceCorreo = document.getElementById('correo');
- const $enlaceWhatsapp = document.getElementById('whatsapp');
 
  $enlaceCorreo.addEventListener('click', ventanaCorreo);
- $enlaceWhatsapp.addEventListener('click', ventanaWhatsapp);
-
 
 function ventanaCorreo(){
     swal ({

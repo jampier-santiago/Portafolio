@@ -595,13 +595,19 @@ body{
     box-sizing: border-box;
 }
 
-.contenedor-tarjetas-cursos ul, .contenedor-tarjetas-cursos li{
+.contenedor-tarjetas-cursos ul{
     width: 100%;
     padding: 0;
     margin: 0;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
     box-sizing: border-box;
+}
+
+.contenedor-tarjetas-cursos li{
+    width: 45%;
 }
 
 .tarjeta-curso{
@@ -609,45 +615,21 @@ body{
     height: 300px;
     margin: 0 auto;
     display: flex;
-    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     border: 2px solid var(--color-claro);
-    border-radius: 25px;
+    border-radius: 10px;
     background-color: rgba(255, 255, 255, .5);
-    box-shadow: 5px 5px 25px var(--color-claro);
+    box-shadow: 1px 2px 2px var(--color-claro);
     box-sizing: border-box;
+}
+
+.tarjeta-curso img{
+    max-width: 85%;
 }
 
 .tarjeta-curso:first-of-type{
     margin-top: 40px;
-}
-
-.tarjeta-curso .nombre-curso{
-    width: 40%;
-    height: 100%;
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    box-sizing: border-box;
-}
-
-.nombre-curso h3{
-    font-family: var(--fuente-titulos);
-    font-size: 20px;
-}
-
-.tarjeta-curso .imagen-curso{
-    width: 60%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-sizing: border-box;
-}
-
-.imagen-curso img{
-    max-width: 85%;
 }
 
 /* /SOBRE MI */
