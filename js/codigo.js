@@ -177,7 +177,6 @@ $enlaceContacto.addEventListener('click', () => moverA_SeccionDeMenu(4));
 $segundoEnlaceContacto.addEventListener('click', () => moverA_SeccionDeMenu(4))
 
 function moverA_SeccionDeMenu(eleccion){
-    alert(window.screen.width);
     if((window.screen.width >= tamaniosPantalla[0]) && (window.screen.width <= (tamaniosPantalla[1] - 1))){
         switch(eleccion){
             case 1:
@@ -185,7 +184,6 @@ function moverA_SeccionDeMenu(eleccion){
                     top: 520,
                     behavior: 'smooth'
                 });
-                alert('segundo if')
             break;
             
             case 2:
@@ -216,7 +214,6 @@ function moverA_SeccionDeMenu(eleccion){
                     top: 522,
                     behavior: 'smooth'
                 });
-                alert('segundo if')
             break;
             
             case 2:
@@ -241,7 +238,6 @@ function moverA_SeccionDeMenu(eleccion){
             break;
         }
     }else if((window.screen.width >= tamaniosPantalla[2]) && (window.screen.width <= (tamaniosPantalla[3] - 1))){
-        alert('tercer if')
         switch(eleccion){
             case 1:
                 window.scrollTo({
@@ -272,7 +268,6 @@ function moverA_SeccionDeMenu(eleccion){
             break;
         }
     }else if((window.screen.width >= tamaniosPantalla[3]) && (window.screen.width <= (tamaniosPantalla[4] - 1))){
-        alert('cuarto if')
         switch(eleccion){
             case 1:
                 window.scrollTo({
@@ -303,7 +298,6 @@ function moverA_SeccionDeMenu(eleccion){
             break;
         }
     }else if((window.screen.width >= tamaniosPantalla[4]) && (window.screen.width <= (tamaniosPantalla[5] - 1))){
-        alert('quinto if')
         switch(eleccion){
             case 1:
                 window.scrollTo({
@@ -334,7 +328,6 @@ function moverA_SeccionDeMenu(eleccion){
             break;
         }
     }else if((window.screen.width >= tamaniosPantalla[5]) && (window.screen.width <= (tamaniosPantalla[6] - 1))){
-        alert('sexto if')
         switch(eleccion){
             case 1:
                 window.scrollTo({
@@ -365,7 +358,6 @@ function moverA_SeccionDeMenu(eleccion){
             break;
         }
     }else if((window.screen.width >= tamaniosPantalla[6]) && (window.screen.width <= tamaniosPantalla[7] - 1)){
-        alert('7 if')
         switch(eleccion){
             case 1:
                 window.scrollTo({
@@ -396,7 +388,6 @@ function moverA_SeccionDeMenu(eleccion){
             break;
         }
     }else{
-        alert('8 if')
         switch(eleccion){
             case 1:
                 window.scrollTo({
