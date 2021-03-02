@@ -181,28 +181,28 @@ function moverA_SeccionDeMenu(eleccion){
         switch(eleccion){
             case 1:
                 window.scrollTo({
-                    top: 520,
+                    top: 805,
                     behavior: 'smooth'
                 });
             break;
             
             case 2:
                 window.scrollTo({
-                    top: 1050,
+                    top: 1361,
                     behavior: 'smooth'
                 });
             break;
     
             case 3:
                 window.scrollTo({
-                    top: 1480,
+                    top: 1792,
                     behavior: 'smooth'
                 });
             break;
     
             case 4:
                 window.scrollTo({
-                    top: 3950,
+                    top: 4251,
                     behavior: 'smooth'
                 })
             break;
@@ -211,28 +211,28 @@ function moverA_SeccionDeMenu(eleccion){
         switch(eleccion){
             case 1:
                 window.scrollTo({
-                    top: 522,
+                    top: 722,
                     behavior: 'smooth'
                 });
             break;
             
             case 2:
                 window.scrollTo({
-                    top: 1050,
+                    top: 1270,
                     behavior: 'smooth'
                 });
             break;
     
             case 3:
                 window.scrollTo({
-                    top: 1480,
+                    top: 1719,
                     behavior: 'smooth'
                 });
             break;
     
             case 4:
                 window.scrollTo({
-                    top: 3950,
+                    top: 4048,
                     behavior: 'smooth'
                 })
             break;
@@ -241,28 +241,28 @@ function moverA_SeccionDeMenu(eleccion){
         switch(eleccion){
             case 1:
                 window.scrollTo({
-                    top: 580,
+                    top: 746,
                     behavior: 'smooth'
                 });
             break;
             
             case 2:
                 window.scrollTo({
-                    top: 1120,
+                    top: 1288,
                     behavior: 'smooth'
                 });
             break;
     
             case 3:
                 window.scrollTo({
-                    top: 1560,
+                    top: 1720,
                     behavior: 'smooth'
                 });
             break;
     
             case 4:
                 window.scrollTo({
-                    top: 4181,
+                    top: 4195,
                     behavior: 'smooth'
                 })
             break;
@@ -271,28 +271,28 @@ function moverA_SeccionDeMenu(eleccion){
         switch(eleccion){
             case 1:
                 window.scrollTo({
-                    top: 468,
+                    top: 423,
                     behavior: 'smooth'
                 });
             break;
             
             case 2:
                 window.scrollTo({
-                    top: 1000,
+                    top: 963,
                     behavior: 'smooth'
                 });
             break;
     
             case 3:
                 window.scrollTo({
-                    top: 1424,
+                    top: 1404,
                     behavior: 'smooth'
                 });
             break;
     
             case 4:
                 window.scrollTo({
-                    top: 4181,
+                    top: 3924,
                     behavior: 'smooth'
                 })
             break;
