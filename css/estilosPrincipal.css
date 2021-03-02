@@ -98,7 +98,7 @@ body{
 .segundo-menu{
     position: fixed;
     top: 100px;
-    bottom: 17%;
+    bottom: 30%;
     right: 0;
     left: 0;
     background-color: rgba(0, 0, 0, .8);
@@ -140,7 +140,7 @@ body{
 /* HEADER*/
 .contenedor-principal{
     width: 100%;
-    height: 600px;
+    height: auto;
     margin-top: 100px;
     display: flex;
     box-sizing: border-box;
@@ -148,7 +148,8 @@ body{
 
 .contenedor-principal__escrito{
     width: 40%;
-    height: 80%;
+    height: 100%;
+    padding: 10px;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -157,6 +158,7 @@ body{
     border-radius: 25px;
     box-shadow: 20px 20px 40px var(--color-oscuro);
     background-color: rgba(0, 0, 0, .3);
+    box-sizing: border-box;
 }
 
 .contenedor-principal__escrito h3{
@@ -167,6 +169,14 @@ body{
 .contenedor-principal__escrito h4{
     font-family: var(--fuente-texto);
     font-size: 25px;
+}
+
+.contenedor-principal__escrito p{
+    font-family: var(--fuente-texto);
+    font-size: 20px;
+    text-align: center;
+    margin: 10px 20px;
+    box-sizing: border-box;
 }
 
 .contenedor-principal__imagen{
@@ -794,13 +804,11 @@ body{
     }
 
     .contenedor-principal{
-        height: 500px;
         flex-direction: column;
     }
 
     .contenedor-principal__escrito{
         width: 85%;
-        height: 50%;
     }
 
     .contenedor-principal__escrito h3, .contenedor-principal__escrito h4{
@@ -809,7 +817,7 @@ body{
 
     .contenedor-principal__imagen{
         width: 80%;
-        margin: auto;
+        margin:20px auto;
     }
 
     .habilidades{
@@ -953,14 +961,12 @@ body{
 
 @media only screen and (min-width: 319px) and (orientation: landscape){
     .contenedor-principal{
-        height: 300px;
         padding: 20px;
         flex-direction: row;
     }
 
     .contenedor-principal__escrito{
         width: 60%;
-        height: 80%;
         box-sizing: border-box;
     }
 
@@ -1033,10 +1039,6 @@ body{
 }
 
 @media only screen and (min-width: 424px) and (max-width: 705px){
-    .contenedor-principal{
-        height: 580px;
-    }
-
     .tarjeta-proyecto{
         width: 80%;
         margin: auto;
@@ -1059,13 +1061,11 @@ body{
 
 @media only screen and (min-width: 706px){
     .contenedor-principal{
-        height: 450px;
         flex-direction: row;
     }
 
     .contenedor-principal__escrito{
         width: 55%;
-        height: 70%;
         margin: auto;
     }
 
@@ -1155,10 +1155,6 @@ body{
 }
 
 @media only screen and (min-width: 1439px){
-    .contenedor-principal{
-        height: 600px;
-    }
-
     .habilidades{
         width: 75%;
         height: 600px;
