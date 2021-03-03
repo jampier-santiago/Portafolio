@@ -858,20 +858,17 @@ body{
         font-size: 15px;
     }
 
-    .proyectos{
-        width: 95%;
+    .tarjeta-proyecto{
+        width: 90%;
+        margin: 10px;
     }
 
-    .proyectos__titulo{
-        height: 8%;
+    .tarjeta-proyecto__imagen{
+        height: 35%;
     }
 
-    .proyectos__titulo h2{
-        font-size: 30px;
-    }
-
-    .proyectos__contenedor{
-        padding: 15px;
+    .tarjeta-proyecto__info{
+        height: 65%;
     }
 
     .sobre-mi{
@@ -1056,6 +1053,10 @@ body{
     .tarjeta-curso img{
         max-width: 55%;
     }
+
+    .tarjeta-proyecto{
+        width: 45%;
+    }
 }
 
 @media only screen and (min-width: 767px){
@@ -1069,6 +1070,18 @@ body{
 
     .tarjeta-curso img{
         max-width: 50%;
+    }
+
+    .tarjeta-proyecto{
+        width: 30%;
+    }
+
+    .tarjeta-proyecto__imagen{
+        height: 40%;
+    }
+
+    .tarjeta-proyecto__info{
+        height: 60%;
     }
 }
 
@@ -1112,7 +1125,7 @@ body{
     }
 }
 
-/* @media only screen and (min-width: 1439px){
+@media only screen and (min-width: 1439px){
     .habilidades{
         width: 75%;
         height: 600px;
@@ -1204,4 +1217,4 @@ body{
     .tarjeta-curso img{
         max-width: 50%;
     }
-} */
+}
