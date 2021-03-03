@@ -412,6 +412,10 @@ body{
     flex-direction: column;
     background-color: rgba(0, 0, 0, .8);
     border: 2px solid var(--color-claro);
+    opacity: 0;
+    animation-delay: 4s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
     border-radius: 25px;
     background-size: cover;
     overflow: hidden;
