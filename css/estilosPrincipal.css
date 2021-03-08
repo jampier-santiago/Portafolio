@@ -872,8 +872,9 @@ body{
         height: 35%;
     }
 
-    .tarjeta-proyecto__info{
-        height: 65%;
+    .tarjeta-proyecto__info a{
+        align-self: center;
+        width: 80%;
     }
 
     .sobre-mi{
@@ -1121,6 +1122,10 @@ body{
 
     .tarjeta-curso img{
         max-width: 60%;
+    }
+
+    .tarjeta-proyecto__info a{
+        width: 60%;
     }
 }
 
