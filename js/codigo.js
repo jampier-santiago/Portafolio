@@ -82,11 +82,11 @@ function validarScroll(){
     console.log(scrollBar)
 
     if(window.screen.width <= 769){
-        if(scrollBar > 1055){
+        if((scrollBar > 1055) && (scrollBar < 2100)){
             activarAnimacion();
         }
     }else{
-        if(scrollBar > 1150){
+        if((scrollBar > 1150) ){
             activarAnimacion();
         }
     }
@@ -186,7 +186,7 @@ function moverA_SeccionDeMenu(eleccion){
     
             case 4:
                 window.scrollTo({
-                    top: 4251,
+                    top: 4696,
                     behavior: 'smooth'
                 })
             break;
