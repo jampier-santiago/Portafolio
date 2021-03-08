@@ -69,7 +69,6 @@ const $enlaceProyectos = document.getElementById('enlaceProyectos');
 const $segundoEnlaceProyectos = document.getElementById('segundoEnlaceProyectos');
 const $tarjetaProyecto = document.getElementsByClassName('tarjeta-proyecto');
 let scrollBar;
-let mensajeMostrado = false;
 
 $enlaceProyectos.addEventListener('click', activarAnimacion);
 $segundoEnlaceProyectos.addEventListener('click', activarAnimacion);
@@ -94,24 +93,9 @@ function validarScroll(){
 }
 
 function activarAnimacion(){
-    if(window.screen.width <= 769){
-        if(mensajeMostrado == false){
-            alert('Para ver los proyectos toque la imagen deseada');
-            $contenedorBarraDeCarga.style.animationName = 'barraColor';
-            $barraDeCarga.style.animationName = 'barraDeCarga';
-            mostrarProyectos();
-            mensajeMostrado = true;
-        }else{
-            $contenedorBarraDeCarga.style.animationName = 'barraColor';
-            $barraDeCarga.style.animationName = 'barraDeCarga';
-            mostrarProyectos();
-        }
-    }else{
-        $contenedorBarraDeCarga.style.animationName = 'barraColor';
-        $barraDeCarga.style.animationName = 'barraDeCarga';
-        mostrarProyectos();
-    }
-
+    $contenedorBarraDeCarga.style.animationName = 'barraColor';
+    $barraDeCarga.style.animationName = 'barraDeCarga';
+    mostrarProyectos();
 }
 
 function mostrarProyectos(){
